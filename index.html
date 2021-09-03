@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Joke generator</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <link href="img/favicon (1).ico" rel="icon" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="mainHead">Joke Generator</div>
+
+    <p class="jokeCategory">//choose one joke Category from below</p>
+
+    <div class="buttonContainer">
+      <button
+        id="jokeCategoryOne"
+        class="categoryButton"
+        onclick="programmingJoke()"
+      >
+        Programming
+      </button>
+      <button
+        id="jokeCategoryTwo"
+        class="categoryButton"
+        onclick="spookyJoke()"
+      >
+        Spooky
+      </button>
+    </div>
+
+    <div class="jokeContainer">
+      <p class="lineAboveJoke">//Joke below try not to laugh <span>🤣</span></p>
+      <p class="joke jokeSetup" id="joke"></p>
+      <p class="jokeDelivery"></p>
+      <button class="newJokeButton" id="newJokeButton">Get New Joke</button>
+    </div>
+
+    <footer class="footer">
+      <p class="footerText">
+        Project created by Arpan with <span style="color: red">❤</span>
+      </p>
+      <div class="footerIcon">
+        <a
+          href="https://www.instagram.com/theselftaught.dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><box-icon type="logo" name="instagram"></box-icon
+        ></a>
+        <a
+          href="https://twitter.com/Webdev_Arpan"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><box-icon name="twitter" type="logo"></box-icon
+        ></a>
+
+        <a
+          href="https://github.com/arpan-pro-learner"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <box-icon name="github" type="logo"></box-icon
+        ></a>
+      </div>
+    </footer>
+
+    <script src="src/app.js"></script>
+  </body>
+</html>
