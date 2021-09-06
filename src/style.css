@@ -306,6 +306,7 @@ body {
     height: 13vh;
     position: absolute;
     margin-top: 25px;
+        bottom: 0;
   }
   .footerText {
     position: absolute;
